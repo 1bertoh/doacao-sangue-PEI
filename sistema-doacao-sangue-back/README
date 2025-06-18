@@ -1,0 +1,98 @@
+# Nome do Projeto Flask
+
+Descrição breve do seu projeto Flask.
+
+## Pré-requisitos
+
+- Python 3.7 ou superior
+- pip (gerenciador de pacotes do Python)
+
+## Instalação e Configuração
+
+### 1. Esteja dentro do diretório /sistema-dacao-sangue-back
+
+```bash
+cd /sistema-dacao-sangue-back
+```
+
+### 2. Criar ambiente virtual (venv)
+
+No Windows:
+```bash
+python -m venv venv
+```
+
+No Linux/macOS:
+```bash
+python3 -m venv venv
+```
+
+### 3. Ativar o ambiente virtual
+
+No Windows:
+```bash
+venv\Scripts\activate
+```
+
+No Linux/macOS:
+```bash
+source venv/bin/activate
+```
+
+### 4. Instalar dependências
+
+```bash
+pip install -r requirements.txt
+```
+
+## Execução do Projeto
+
+### Rodar o servidor Flask
+
+```bash
+python app.py
+```
+
+
+O servidor estará rodando em: `http://localhost:5001`
+
+## Estrutura do Projeto
+
+```
+projeto/
+├── app.py              # Arquivo principal da aplicação
+├── requirements.txt    # Dependências do projeto
+├── venv/              # Ambiente virtual (não commitado)
+└── README.md         # Este arquivo
+```
+
+## Comandos Úteis
+
+### Desativar ambiente virtual
+```bash
+deactivate
+```
+
+### Gerar arquivo requirements.txt
+```bash
+pip freeze > requirements.txt
+```
+
+### Limpar cache do Python
+```bash
+find . -type d -name __pycache__ -delete
+```
+
+## Troubleshooting
+
+### Erro: "flask não é reconhecido como comando"
+- Certifique-se de que o ambiente virtual está ativado
+- Reinstale o Flask: `pip install flask`
+
+### Erro: "ModuleNotFoundError"
+- Verifique se todas as dependências foram instaladas: `pip install -r requirements.txt`
+- Confirme se o ambiente virtual está ativado
+
+### Porta já em uso
+- Mude a porta no código ou use: `flask run --port 5002`
+
